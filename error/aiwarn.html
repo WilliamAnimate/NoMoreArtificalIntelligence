@@ -1,0 +1,39 @@
+<!--
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License, v. 2.0. If a copy of the MPL was not distributed with this
+    file, You can obtain one at https://mozilla.org/MPL/2.0/.
+-->
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>AI Page Detected</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" id="favicon" href="chrome://global/skin/icons/info.svg">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="text-container">
+                <div class="title">
+                    <h1 class="title-text">That's an AI page.</h1>
+                </div>
+
+                <p id="errorShortDesc">The site <strong><span id="websiteLink"></span></strong> is a pro-AI website, and NoMoreArtificalIntelligence has blocked it to protect you.</p>
+
+                <div id="errorLongDesc">
+                    <span><strong>What can I do?</strong></span>
+                    <ul>
+                        <li>Cope</li>
+                        <li>Flame me for not keeping this stupid project apolitical</li>
+                        <!-- <li>Bypass this warning and go anyway</li> -->
+                    </ul>
+                </div>
+
+                <div id="certErrorAndCaptivePortalButtonContainer" class="button-container">
+                    <button id="returnButton" class="primary">Go Back (Required)</button>
+                    <!-- <button id="continueAnyway">Do as I say: let me embrace the warm comfort of linear algebra</button> -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
