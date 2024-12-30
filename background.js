@@ -17,7 +17,8 @@ chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
     // maybe RIIR with webassembly to make this  f a s t
     if (url.hostname === "chatgpt.com" || url.hostname === "openai.com" ||
         url.hostname === "phind.com" || url.hostname === "perplexity.ai" ||
-        url.hostname === "craiyon.com"
+        url.hostname === "craiyon.com" || url.hostname === "claude.ai" ||
+        url.hostname === "meta.ai"
     ) {
         // if (typeof(rtRedirectTarget != "string")) console.error(`${typeof(rtRedirectTarget)}`);
         // console.log(allowlistedPages);
